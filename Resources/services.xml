@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<container xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns="http://symfony.com/schema/dic/services"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services
+        http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <services>
+
+        <!-- frontend listeners -->
+        <service id="ost_inhouse_ostermann_theme.listeners.controllers.frontend" class="OstInhouseOstermannTheme\Listeners\Controllers\Frontend">
+            <argument type="string">%ost_inhouse_ostermann_theme.view_dir%</argument>
+            <tag name="shopware.event_listener" method="onPostDispatch" event="Enlight_Controller_Action_PostDispatch_Frontend" />
+        </service>
+
+    </services>
+</container>

@@ -10,7 +10,7 @@
 {* ... *}
 {block name='frontend_index_logo'}
     <div class="logo--shop block">
-        <a class="logo--link" href="http://intranet-apswit11/verkaufsassistent/forceredirect/ostermann" title="{"{config name=shopName}"|escapeHtml} - {"{s name='IndexLinkDefault' namespace="frontend/index/index"}{/s}"|escape}">
+        <a class="logo--link" href="{if is_array( $ostInhouseOstermannTheme ) && $ostInhouseOstermannTheme.homeUrl != ""}{$ostInhouseOstermannTheme.homeUrl}{else}{url controller='index'}{/if}" title="{"{config name=shopName}"|escapeHtml} - {"{s name='IndexLinkDefault' namespace="frontend/index/index"}{/s}"|escape}">
             <picture>
                 <source srcset="{link file=$theme.desktopLogo}" media="(min-width: 78.75em)">
                 <source srcset="{link file=$theme.tabletLandscapeLogo}" media="(min-width: 64em)">

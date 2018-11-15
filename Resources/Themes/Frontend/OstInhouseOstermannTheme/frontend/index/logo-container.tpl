@@ -9,6 +9,20 @@
 
 {* ... *}
 {block name='frontend_index_logo'}
+
+
+    <div class="logo--shop ost-consultant--logo-container block">
+        <a class="logo--link" href="{url controller='OstConsultant' action='dashboard'}" title="{"{config name=shopName}"|escapeHtml} - {"{s name='IndexLinkDefault' namespace="frontend/index/index"}{/s}"|escape}">
+            <picture>
+                <source srcset="{link file=$theme.desktopLogo}" media="(min-width: 78.75em)">
+                <source srcset="{link file=$theme.tabletLandscapeLogo}" media="(min-width: 64em)">
+                <source srcset="{link file=$theme.tabletLogo}" media="(min-width: 48em)">
+                <img srcset="{link file=$theme.mobileLogo}" alt="{"{config name=shopName}"|escapeHtml} - {"{s name='IndexLinkDefault' namespace="frontend/index/index"}{/s}"|escape}" />
+            </picture>
+        </a>
+    </div>
+
+
     <div class="logo--shop block">
         <a class="logo--link" href="{if is_array( $ostInhouseOstermannTheme ) && $ostInhouseOstermannTheme.homeUrl != ""}{$ostInhouseOstermannTheme.homeUrl}{else}{url controller='index'}{/if}" title="{"{config name=shopName}"|escapeHtml} - {"{s name='IndexLinkDefault' namespace="frontend/index/index"}{/s}"|escape}">
             <picture>
@@ -19,4 +33,6 @@
             </picture>
         </a>
     </div>
+
+
 {/block}

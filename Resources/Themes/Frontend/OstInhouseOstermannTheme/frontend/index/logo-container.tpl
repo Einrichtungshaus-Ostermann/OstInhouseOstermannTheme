@@ -11,6 +11,20 @@
 {block name='frontend_index_logo'}
 
 
+    {* logo *}
+    {assign var="logo" value="frontend/_public/src/img/logos/ostermann-logo--580x83--72dpi.png"}
+
+
+    {* overwrite theme settings *}
+    {$theme.desktopLogo         = {$logo}}
+    {$theme.tabletLandscapeLogo = {$logo}}
+    {$theme.tabletLogo          = {$logo}}
+    {$theme.mobileLogo          = {$logo}}
+
+
+
+
+
     <div class="logo--shop ost-consultant--logo-container block">
         <a class="logo--link" href="{url controller='OstConsultant' action='dashboard'}" title="{"{config name=shopName}"|escapeHtml} - {"{s name='IndexLinkDefault' namespace="frontend/index/index"}{/s}"|escape}">
             <picture>

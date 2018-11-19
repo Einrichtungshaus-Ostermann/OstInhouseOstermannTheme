@@ -12,7 +12,7 @@
 
 
     {* logo *}
-    {assign var="logo" value="frontend/_public/src/img/logos/ostermann-logo--580x83--72dpi.png"}
+    {assign var="logo" value="frontend/_public/src/img/logos/ostermann-logo--349x50.png"}
 
 
     {* overwrite theme settings *}

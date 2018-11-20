@@ -10,22 +10,14 @@
 {* ... *}
 {block name='frontend_index_header_favicons'}
 
-
     {* logo *}
     {assign var="favicon" value="frontend/_public/src/img/favicons/favicon.ico"}
-
-
 
     {* overwrite theme settings *}
     {$theme.favicon         = {$favicon}}
     {$theme.appleTouchIcon = {$favicon}}
 
-
-
-
+    {* parent *}
     {$smarty.block.parent}
-
-
+    
 {/block}
-
-

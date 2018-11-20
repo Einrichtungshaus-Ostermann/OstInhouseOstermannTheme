@@ -3,11 +3,6 @@
 /**
  * Einrichtungshaus Ostermann GmbH & Co. KG - Inhouse Ostermann Theme
  *
- * Inhouse Ostermann Theme.
- *
- * 1.0.0
- * - initial release
- *
  * @package   OstInhouseOstermannTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
@@ -19,56 +14,46 @@ namespace Shopware\Themes\OstInhouseOstermannTheme;
 
 class Theme extends \Shopware\Components\Theme
 {
+    /**
+     * ...
+     *
+     * @var string
+     */
+    protected $extend = 'OstInhouseTheme';
 
     /**
      * ...
      *
      * @var string
      */
-
-    protected $extend = "OstInhouseTheme";
-
-
+    protected $name = 'Inhouse Ostermann Theme';
 
     /**
      * ...
      *
      * @var string
      */
-
-    protected $name = "Inhouse Ostermann Theme";
-
-
+    protected $description = 'Inhouse Ostermann Theme';
 
     /**
      * ...
      *
      * @var string
      */
-
-    protected $description = "Inhouse Ostermann Theme";
-
-
+    protected $author = 'Einrichtungshaus Ostermann GmbH & Co. KG';
 
     /**
      * ...
      *
      * @var string
      */
-
-    protected $author = "Einrichtungshaus Ostermann GmbH & Co. KG";
-
-
+    protected $license = 'New BSD';
 
     /**
      * ...
      *
-     * @var string
+     * @var bool
      */
-
-    protected $license = "New BSD";
-
-
     protected $injectBeforePlugins = true;
 
     /**
@@ -76,9 +61,6 @@ class Theme extends \Shopware\Components\Theme
      *
      * @var array
      */
-
-    protected $javascript = array(
-    );
-    
-
+    protected $javascript = [
+    ];
 }

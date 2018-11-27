@@ -19,5 +19,5 @@
 
     {* parent *}
     {$smarty.block.parent}
-    
+
 {/block}

@@ -62,6 +62,6 @@ class Frontend
         $locationService = Shopware()->Container()->get('ost_client.location_service');
 
         // assign new home url
-        $view->assign('ostInhouseOstermannTheme', ['homeUrl' => $locationService->getHomeUrl()]);
+        $view->assign('ostInhouseOstermannTheme', ['homeUrl' => $locationService->getRedirectHomeUrl()]);
     }
 }

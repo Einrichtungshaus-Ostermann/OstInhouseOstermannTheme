@@ -8,6 +8,10 @@
  * 1.0.0
  * - initial release
  *
+ * 1.0.1
+ * - changed home url to intranet redirect url to get redirected correctly
+ *   depending on the ip/mac address of the end device
+ *
  * @package   OstInhouseOstermannTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>

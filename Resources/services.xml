@@ -6,9 +6,19 @@
     <services>
 
         <!-- frontend listeners -->
-        <service id="ost_inhouse_ostermann_theme.listeners.controllers.frontend" class="OstInhouseOstermannTheme\Listeners\Controllers\Frontend">
+        <service id="ost_inhouse_ostermann_theme.listeners.controllers.frontend.pre" class="OstInhouseOstermannTheme\Listeners\Controllers\Frontend">
             <argument type="string">%ost_inhouse_ostermann_theme.view_dir%</argument>
-            <tag name="shopware.event_listener" method="onPostDispatch" event="Enlight_Controller_Action_PreDispatch_Frontend" />
+            <tag name="shopware.event_listener" method="onPreDispatch" event="Enlight_Controller_Action_PreDispatch_Frontend" />
+        </service>
+
+        <service id="ost_inhouse_ostermann_theme.listeners.controllers.frontend.post" class="OstInhouseOstermannTheme\Listeners\Controllers\Frontend">
+            <argument type="string">%ost_inhouse_ostermann_theme.view_dir%</argument>
+            <tag name="shopware.event_listener" method="onPreDispatch" event="Enlight_Controller_Action_PostDispatchSecure_Frontend" />
+        </service>
+
+        <service id="ost_inhouse_ostermann_theme.listeners.controllers.widgets" class="OstInhouseOstermannTheme\Listeners\Controllers\Frontend">
+            <argument type="string">%ost_inhouse_ostermann_theme.view_dir%</argument>
+            <tag name="shopware.event_listener" method="onPreDispatch" event="Enlight_Controller_Action_PostDispatchSecure_Widgets" />
         </service>
 
     </services>

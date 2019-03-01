@@ -40,7 +40,7 @@ class Frontend
      *
      * @param EventArgs $arguments
      */
-    public function onPostDispatch(EventArgs $arguments)
+    public function onPreDispatch(EventArgs $arguments)
     {
         // get the controller
         /* @var $controller Controller */
@@ -50,6 +50,7 @@ class Frontend
         $request = $controller->Request();
         $view = $controller->View();
 
+        // get currently active plugins
         $activePlugins = Shopware()->Container()->getParameter('active_plugins');
 
         // do we even have our client?

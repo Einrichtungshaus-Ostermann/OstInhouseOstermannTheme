@@ -14,7 +14,7 @@
     {assign var="favicon" value="frontend/_public/src/img/favicons/favicon.ico"}
 
     {* overwrite theme settings *}
-    {$theme.favicon         = {$favicon}}
+    {$theme.favicon        = {$favicon}}
     {$theme.appleTouchIcon = {$favicon}}
 
     {* parent *}

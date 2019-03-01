@@ -12,6 +12,9 @@
  * - changed home url to intranet redirect url to get redirected correctly
  *   depending on the ip/mac address of the end device
  *
+ * 1.0.2
+ * - fixed home url for some urls
+ *
  * @package   OstInhouseOstermannTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>

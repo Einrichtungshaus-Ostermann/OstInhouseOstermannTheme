@@ -3,7 +3,7 @@
 /**
  * Einrichtungshaus Ostermann GmbH & Co. KG - Inhouse Ostermann Theme
  *
- * Inhouse Ostermann Theme
+ * Inhouse Ostermann Theme.
  *
  * 1.0.0
  * - initial release
@@ -14,6 +14,9 @@
  *
  * 1.0.2
  * - fixed home url for some urls
+ *
+ * 1.0.3
+ * - hide 2nd consultant logo by default
  *
  * @package   OstInhouseOstermannTheme
  *

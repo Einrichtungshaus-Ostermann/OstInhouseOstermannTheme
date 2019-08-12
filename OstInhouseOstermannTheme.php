@@ -18,6 +18,9 @@
  * 1.0.3
  * - hide 2nd consultant logo by default
  *
+ * 1.0.4
+ * - fixed preview.png
+ *
  * @package   OstInhouseOstermannTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>

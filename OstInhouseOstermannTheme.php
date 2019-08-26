@@ -21,6 +21,13 @@
  * 1.0.4
  * - fixed preview.png
  *
+ * 1.0.5
+ * - changed article-family slider to show 2 articles per column
+ * - fixed inject-before-plugin flag
+ *
+ * 1.0.6
+ * - fixed theme for ost-article-family update
+ *
  * @package   OstInhouseOstermannTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
